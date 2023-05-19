@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>سند المالية - الصفحة الرئيسية</title>
+</head>
+
+<body class="body">
+    <!-- sidebar start -->
+
+    <section class="sidebar">
+        <div class="side-top">
+            <div class="logo-img">
+                <img src="./pics/logo.png" alt="">
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <img src="./pics/home.png" alt="">
+                            <span>الرئيسية</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./pics/receipt.png" alt="">
+                            <span>بيانات المنشأة</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./pics/Coin.png" alt="">
+                            <span>طلبات التمويل</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./pics/card.png" alt="">
+                            <span>المحفظة</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="operation">
+                            <div>
+                                <img src="./pics/group.png" alt="">
+                                <span>العمليات</span>
+                            </div>
+                            <img class="arrow" src="./pics/Vector.png" alt="">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./pics/settings.png" alt="">
+                            <span>الإعدادات</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="side-bottom">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./pics/question.png" alt="">
+                        <span>الدعم والمساعدة</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./pics/arrow-right.png" alt="">
+                        <span>تسجيل الخروج</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <div class="side-menu-cover">
+        <section class="sidebar sidebar-menu">
+
+            <div class="close-btn" onclick="hideSideMenu()">
+                <i class="fas fa-close"></i>
+            </div>
+
+            <div class="side-top">
+                <div class="logo-img">
+                    <img src="./pics/logo.png" alt="">
+                </div>
+
+                <div class="side-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <img src="./pics/home.png" alt="">
+                                <span>الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./pics/receipt.png" alt="">
+                                <span>بيانات المنشأة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./pics/Coin.png" alt="">
+                                <span>طلبات التمويل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./pics/card.png" alt="">
+                                <span>المحفظة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="operation">
+                                <div>
+                                    <img src="./pics/group.png" alt="">
+                                    <span>العمليات</span>
+                                </div>
+                                <img class="arrow" src="./pics/Vector.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./pics/settings.png" alt="">
+                                <span>الإعدادات</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="side-bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./pics/question.png" alt="">
+                            <span>الدعم والمساعدة</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./pics/arrow-right.png" alt="">
+                            <span>تسجيل الخروج</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- sidebar end -->
+
+
+
+
+    <!-- home section start -->
+
+    <section class="home">
+        <div class="home-header">
+            <div class="head-title">
+                <div class="menu-icon">
+                    <img src="./pics/menu.png" alt="" onclick="sideToggle()">
+                </div>
+                <h3>الرئيسية</h3>
+            </div>
+
+
+            <div class="logo-img">
+                <img src="./pics/logo.png" alt="">
+            </div>
+
+
+            <div class="head-info">
+                <ul>
+                    <li>
+                        <img src="./pics/search.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./pics/notifications.png" alt="">
+                    </li>
+                    <li class="profile">
+                        <img src="./pics/profile.png" alt="">
+                        <h4>محمد محسن</h4>
+                        <img class="vector" src="./pics/Vector.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="home-body">
+            <div class="row">
+                <div class="colom-col col-md-12 col-lg-7 col-xl-8">
+                    <div class="col-content">
+                        <div class="content-top">
+                            <h4>مؤسسة بن محمد للإستشارات القانونية</h4>
+
+                            <div class="content-top-info">
+                                <ul>
+                                    <li class="li-left i-top">
+                                        <img src="./pics/Pencil Writing.png" alt="">
+                                        <span>رقم السجل التجاري : <label>5457 4543 97</label></span>
+                                    </li>
+                                    <li class="li-top">
+                                        <img src="./pics/phone.png" alt="">
+                                        <span>777 2980 45 996+</span>
+                                    </li>
+                                    <li class="li-left">
+                                        <img src="./pics/user.png" alt="">
+                                        <span>إسم المفوض : <label>محمد محمد حسن</label></span>
+                                    </li>
+                                    <li class="">
+                                        <img src="./pics/Email.png" alt="">
+                                        <span>mohamedm@gmail.com</span>
+                                    </li>
+                                </ul>
+
+                                <div class="top-link">
+                                    <a href="#">طلب تحويل <img src="./pics/arrow-left.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row sec-row">
+                        <div class="colom col-12 col-sm-6">
+                            <div class="sec-col-content">
+                                <div class="card-title">
+                                    <h5>طلبات التمويل</h5>
+
+                                    <img src="./pics/card-setting.png" alt="">
+                                </div>
+
+                                <h2>10</h2>
+
+
+                                <div class="bottom-line">
+                                    <span class="first-span">2.05% <img src="./pics/green-v.png" alt=""></span>
+                                    <img src="./pics/dot.png" alt="" class="dot">
+                                    <span class="date">10 يناير 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colom col-12 col-sm-6">
+                            <div class="sec-col-content">
+                                <div class="card-title">
+                                    <h5>مبلغ التمويل</h5>
+
+                                    <img src="./pics/card-setting.png" alt="">
+                                </div>
+
+                                <h2>30,476.00 <span>ر.س</span></h2>
+
+
+                                <div class="bottom-line">
+                                    <span class="first-span">2.05% <img src="./pics/green-v.png" alt=""></span>
+                                    <img src="./pics/dot.png" alt="" class="dot">
+                                    <span class="date">10 يناير 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="sec-col-content">
+                                <div class="card-title">
+                                    <h5>المبلغ المسدد</h5>
+
+                                    <img src="./pics/card-setting.png" alt="">
+                                </div>
+
+                                <h2>20,476.00 <span>ر.س</span></h2>
+
+
+                                <div class="bottom-line">
+                                    <span class="first-span">2.05% <img src="./pics/green-v.png" alt=""></span>
+                                    <img src="./pics/dot.png" alt="" class="dot">
+                                    <span class="date">10 يناير 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="sec-col-content">
+                                <div class="card-title">
+                                    <h5>الدفعات المتبقية</h5>
+
+                                    <img src="./pics/card-setting.png" alt="">
+                                </div>
+
+                                <h2>10,000.00 <span>ر.س</span></h2>
+
+
+                                <div class="bottom-line">
+                                    <span class="first-span">2.05% <img src="./pics/green-v.png" alt=""></span>
+                                    <img src="./pics/dot.png" alt="" class="dot">
+                                    <span class="date">10 يناير 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="chart-box">
+                        <div class="chart-info">
+                            <h4>توزيع مبالغ التمويل</h4>
+                            <div class="left">
+                                <div class="toggle-span">
+                                    <span>المبلغ المسدد</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="toggle-span">
+                                    <span>الدفعات المتبقية</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+
+                                <select name="" id="">
+                                    <option value="بناير">يناير 2023</option>
+                                    <option value="فبراير">فبراير 2023</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <canvas id="myChart" width="" height="300"></canvas>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12 col-lg-5 col-xl-4">
+                    <div class="col-left-info">
+                        <div class="col-left-info-top">
+                            <div class="col-top-title">
+                                <h4>المحفظة</h4>
+
+                                <img src="./pics/dots-vertical.png" alt="">
+                            </div>
+
+
+                            <div class="visa-card">
+                                <div class="visa-mask">
+                                    <div class="visa-logo">
+                                        <img src="./pics/visa.png" alt="">
+                                    </div>
+
+                                    <h6>الرصيد <img src="./pics/eye.png" alt=""></h6>
+
+                                    <h2>24,000.55 <span>ر.س</span></h2>
+
+                                    <span class="acc-num">
+                                        رقم حسابك الاستثماري
+                                    </span>
+
+                                    <div class="visa-code">
+                                        <img src="./pics/copy.png" alt="">
+
+                                        <p>SA10 301 0344 5454 545</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spans">
+                                <span class="no-span"></span>
+                                <span class="no-span"></span>
+                                <span class="active-span"></span>
+                            </div>
+
+
+                            <div class="visa-proccess">
+                                <ul>
+                                    <li>
+                                        <img src="./pics/card-send.png" alt="">
+
+                                        <p>سحب</p>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/card-receive.png" alt="">
+
+                                        <p>ايداع</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="col-left-info-middle">
+                            <div class="middle-card">
+                                <div class="middle-card-title">
+                                    <img src="./pics/money.png" alt="">
+
+                                    <h4>معلوماتي</h4>
+                                </div>
+
+                                <div class="prog">
+                                    <div class="progress-title">
+                                        <p>استكمل البيانات لتقديم طلب التمويل</p>
+                                        <span>45%</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Success example"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-success" style="width: 75%"></div>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <img src="./pics/Check Circle-2.png" alt="">
+                                        <span>تأكيد البريد الإلكتروني</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/Check Circle-2.png" alt="">
+                                        <span>معلومات الشركة</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/Check Circle.png" alt="">
+                                        <span>إقرار</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/Check Circle.png" alt="">
+                                        <span>معلومات الإتصال</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/Check Circle.png" alt="">
+                                        <span>إضافة المعلومات البنكية</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/Check Circle.png" alt="">
+                                        <span>إرفاق المستندات</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="middle-card card-2">
+                                <div class="middle-card-title">
+                                    <img src="./pics/user2.png" alt="">
+
+                                    <h4>المستشار</h4>
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <img src="./pics/b-user.png" alt="">
+                                        <span>محمد محمد حسن</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/b-email.png" alt="">
+                                        <span>mohamedm@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/b-phone.png" alt="">
+                                        <span>777 2980 45 996+</span>
+                                    </li>
+                                    <li>
+                                        <img src="./pics/date.png" alt="">
+                                        <span>بتاريخ 23-01-2023 عند 10:00 صباحًا</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- home section end -->
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"
+        integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/side.js"></script>
+    <script type="module" src="./js/charts.js"></script>
+</body>
+
+</html>

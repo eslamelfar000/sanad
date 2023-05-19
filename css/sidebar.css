@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700&display=swap");
+
+:root {
+  --main-color: #0249ac;
+  --ligh-color: #0249ac;
+  --light-green: #22c55e;
+  --very-light-green: #4bb6ae;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo";
+  direction: rtl;
+  margin-right: 280px;
+}
+
+/* body toggle */
+.body-toggle {
+  margin-right: 81px;
+}
+/* body toggle */
+
+.sidebar {
+  width: 280px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden auto;
+  padding: 30px 20px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .side-top .logo-img {
+  margin-bottom: 30px;
+}
+
+.sidebar .side-top .logo-img img {
+  width: auto;
+}
+
+.sidebar .side-top .side-menu ul,
+.sidebar .side-bottom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .side-top .side-menu ul li,
+.sidebar .side-bottom ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar .side-top .side-menu ul li a,
+.sidebar .side-bottom ul li a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  color: #718096;
+  transition: 0.4s;
+}
+
+.sidebar .side-top .side-menu ul li.active a {
+  background: var(--main-color);
+  color: white;
+}
+
+.sidebar .side-top .side-menu ul li a:hover,
+.sidebar .side-bottom ul li a:hover {
+  background: var(--main-color);
+  color: white;
+}
+
+.sidebar .side-top .side-menu ul li a img,
+.sidebar .side-bottom ul li a img {
+  margin-left: 10px;
+  transition: 0.4s;
+}
+
+.sidebar .side-top .side-menu ul li a:hover img,
+.sidebar .side-bottom ul li a:hover img {
+  filter: invert(10%) sepia(14%) saturate(10%) hue-rotate(101deg)
+    brightness(490%) contrast(100%);
+}
+
+.sidebar .side-top .side-menu ul li a.operation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar .side-top .side-menu ul li a.operation .arrow {
+  margin-left: 0;
+}
+
+/* side-toggle */
+
+.side-toggle {
+  width: auto;
+}
+
+.side-toggle ul li a span {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.side-toggle ul li a img {
+  margin-left: 0 !important;
+}
+
+.side-toggle .logo-img {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.side-toggle ul li a.operation .arrow {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+@media (max-width: 1499px) {
+  .body {
+    margin-right: 81px;
+  }
+
+  .sidebar {
+    width: auto;
+  }
+
+  .sidebar ul li a span {
+    display: none;
+  }
+
+  .sidebar ul li a img {
+    margin-left: 0 !important;
+  }
+
+  .sidebar .logo-img {
+    display: none;
+  }
+
+  .sidebar ul li a.operation .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .body {
+    margin-right: 0px;
+  }
+}
+
+.side-menu-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.596);
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 100;
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.side-menu-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.side-menu-cover .sidebar {
+  width: 250px;
+  position: relative;
+  overflow: visible;
+  transform: translateX(300px);
+  transition: 0.4s;
+  display: flex;
+}
+
+.side-menu-show .sidebar {
+  transform: translateX(0px);
+}
+
+.side-menu-cover .sidebar .close-btn {
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  background: white;
+  padding: 5px 14px;
+  font-size: 20px;
+  color: var(--main-color);
+  border-radius: 50%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.side-menu-cover .sidebar .close-btn:hover {
+  background: var(--main-color);
+  color: white;
+}
+
+.side-menu-cover .sidebar ul li a span {
+  display: flex;
+}
+
+.side-menu-cover .sidebar .side-top .side-menu ul li a.operation div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-menu-cover .sidebar ul li a img {
+  margin-left: 10px !important;
+}
+
+.side-menu-cover .sidebar .logo-img {
+  display: flex;
+}
+
+.side-menu-cover .sidebar ul li a.operation .arrow {
+  display: flex;
+}
+
+/* side-toggle */
+
+/* side menu end */
