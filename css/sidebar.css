@@ -66,9 +66,18 @@ body {
   transition: 0.4s;
 }
 
+.sidebar .side-top .side-menu ul li:first-child a img {
+  filter: invert(55%);
+}
+
 .sidebar .side-top .side-menu ul li.active a {
   background: var(--main-color);
   color: white;
+}
+
+.sidebar .side-top .side-menu ul li.active a img {
+  filter: invert(10%) sepia(14%) saturate(10%) hue-rotate(101deg)
+    brightness(490%) contrast(100%);
 }
 
 .sidebar .side-top .side-menu ul li a:hover,
