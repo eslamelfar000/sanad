@@ -136,6 +136,7 @@ body {
 
   .home {
     padding: 0px 10px;
+    padding-bottom: 30px;
   }
 }
 
@@ -280,6 +281,12 @@ body {
 
 .home .home-body .sec-row .colom {
   margin-bottom: 25px;
+}
+
+@media (max-width: 575px) {
+  .home .home-body .sec-row .colom2 {
+    margin-bottom: 25px;
+  }
 }
 
 .home .home-body .sec-row .sec-col-content {
